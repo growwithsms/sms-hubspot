@@ -1,0 +1,89 @@
+.ebook-landing-page .header-container {
+    display: none;
+}
+.ebook-landing-page .body-container {
+    padding-top: 0;
+}
+.ebook-landing-page .blue-section {
+    background: $blue;
+    color: #fff;
+    padding: 0 1em;
+    background-size: cover;
+    background-position: center;
+}
+
+.ebook-landing-page .blue-section .page-center {
+    max-width: 850px!important;
+}
+
+.ebook-landing-page .blue-section .widget-type-section_header {
+    text-align: center;
+    font-size: 2vw;
+    line-height: 1;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+@media (max-width: 767px) {
+    .ebook-landing-page .blue-section .widget-type-section_header {
+        font-size: 1em;
+    }
+}
+.ebook-landing-page .white-section .widget-type-header {
+    text-align: center;
+}
+.ebook-landing-page .blue-section .widget-type-linked_image {
+    padding: 0 2em 2em;
+}
+.ebook-landing-page .blue-section .widget-type-linked_image {
+    padding: 0 2em 2em;
+}
+.ebook-landing-page .white-section {
+    padding: 2em;
+}
+.ebook-landing-page h1 {
+    font-size: 2em;
+    line-height: 1;
+    margin-bottom: 0.4em;
+}
+.ebook-landing-page h2 {
+    font-size: 3em;
+    font-weight: 200;
+    line-height: 1.5;
+}
+.ebook-landing-page h3.form-title {
+    color: #fff;
+}
+.ebook-landing-page .hs-form {
+    border: 0 none;
+    padding: 0;
+    background: none;
+}
+.ebook-landing-page .hs-input {
+    background: rgba(0, 0, 0, 0.08);
+    color: #fff;
+    padding: 5px 8px;
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.ebook-landing-page select.hs-input option {
+    background: white;
+    color: #000;
+}
+.ebook-landing-page .hs-input:focus {
+    background: rgba(255, 255, 255, 0.1);
+}
+.ebook-landing-page input.hs-button.primary.large {
+    background: #F9941E;
+    border: 0 none;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    padding: 0.3em 1em;
+    display: block;
+    width: 100%;
+    margin-bottom: 2em;
+}
+.ebook-landing-page .main-content ul li {
+    font-size: 1.25em;
+    margin-left: 1em;
+}

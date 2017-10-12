@@ -1,0 +1,172 @@
+button,
+.button,
+.hs-button,
+input[type="submit"] {
+	display: inline-block;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: .5rem 1.5rem;
+	background: $green-gradient;
+	border-radius: 2rem;
+	color: $white;
+	text-decoration: none;
+	text-align: center;
+	border: 3px solid $green;
+	transition: all 200ms ease;
+	letter-spacing: 1px;
+	margin-right: .5rem;
+	margin-bottom: .5rem;
+	&:hover,
+	&:focus {
+		color: $white;
+		background: $green-gradient-reverse;
+		&:active {
+			border-color: lighten($green, 5%);
+		}
+	}
+	&.orange {
+		background: $orange-gradient;
+		border-color: $orange;
+		&:hover,
+		&:focus {
+			background: $orange-gradient-reverse;
+			&:active {
+				border-color: lighten($orange, 5%);
+			}
+		}
+	}
+	&.blue {
+		background: $blue-gradient;
+		border-color: $light-blue;
+		&:hover,
+		&:focus {
+			background: $blue-gradient-reverse;
+			&:active {
+				border-color: lighten($light-blue, 5%);
+			}
+		}
+	}
+	&.purple {
+		background: $purple-gradient;
+		border-color: $purple;
+		&:hover,
+		&:focus {
+			background: $purple-gradient-reverse;
+			&:active {
+				border-color: lighten($purple, 5%);
+			}
+		}
+	}
+	&.white {
+		background: $white;
+		border-color: $white;
+		color: $blue;
+		box-shadow: $subtle-shadow;
+		&:hover,
+		&:focus {
+			color: $purple;
+			&:active {
+				border-color: $purple;
+			}
+		}
+	}
+	&.ghost {
+		background: none;
+		border-color: currentColor;
+		&:hover,
+		&:focus {
+			background-color: rgba(255,255,255,.1);
+			&:active {
+				background-color: rgba(255,255,255,.05);
+				border-color: $white;
+			}
+		}
+	}
+}
+
+.cta_button.button {
+	display: inline-block !important;
+	font-family: "Montserrat", sans-serif !important;
+	font-weight: bold !important;
+	text-transform: uppercase !important;
+	padding: .5rem 1.5rem !important;
+	background: $green-gradient !important;
+	border-radius: 2rem !important;
+	color: $white !important;
+	text-decoration: none !important;
+	text-align: center !important;
+	border: 3px solid $green !important;
+	transition: all 200ms ease !important;
+	letter-spacing: 1px !important;
+	margin-right: .5rem !important;
+	margin-bottom: .5rem !important;
+	box-shadow: 0 0 0 !important;
+	text-shadow: 0 0 0 !important;
+	&:hover,
+	&:focus {
+		color: $white !important;
+		background: $green-gradient-reverse !important;
+		&:active {
+			border-color: lighten($green, 5%) !important;
+		}
+	}
+	&.orange {
+		background: $orange-gradient !important;
+		border-color: $orange !important;
+		&:hover,
+		&:focus {
+			background: $orange-gradient-reverse !important;
+			&:active {
+				border-color: lighten($orange, 5%) !important;
+			}
+		}
+	}
+	&.blue {
+		background: $blue-gradient !important;
+		border-color: $light-blue !important;
+		&:hover,
+		&:focus {
+			background: $blue-gradient-reverse !important;
+			&:active {
+				border-color: lighten($light-blue, 5%) !important;
+			}
+		}
+	}
+	&.purple {
+		background: $purple-gradient !important;
+		border-color: $purple !important;
+		&:hover,
+		&:focus {
+			background: $purple-gradient-reverse !important;
+			&:active {
+				border-color: lighten($purple, 5%) !important;
+			}
+		}
+	}
+	&.white {
+		background: $white !important;
+		border-color: $white !important;
+		color: $blue !important;
+		box-shadow: $subtle-shadow !important;
+		&:hover,
+		&:focus {
+			color: $purple !important;
+			&:active {
+				border-color: $purple !important;
+			}
+		}
+	}
+	&.ghost {
+		background: none !important;
+		border-color: currentColor !important;
+		&:hover,
+		&:focus {
+			background-color: rgba(255,255,255,.1) !important;
+			&:active {
+				background-color: rgba(255,255,255,.05) !important;
+				border-color: $white !important;
+			}
+		}
+	}
+}

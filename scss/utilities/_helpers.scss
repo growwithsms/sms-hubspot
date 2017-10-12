@@ -1,0 +1,77 @@
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+
+/* Text meant only for screen readers. */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	position: absolute !important;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+}
+
+/* Hubspot COS No Gutter Grid --- removes HubSpot's default grid gutters  */
+.no-gutter .row-fluid .span2,
+.no-gutter.row-fluid .span2 {
+    margin-left: 0;
+    width: 50%;
+}
+.no-gutter .row-fluid .span3,
+.no-gutter.row-fluid .span3 {
+    margin-left: 0;
+    width: 25%;
+}
+.no-gutter .row-fluid .span4,
+.no-gutter.row-fluid .span4 {
+    margin-left: 0;
+    width: 33.333333%;
+}
+.no-gutter .row-fluid .span5,
+.no-gutter.row-fluid .span5 {
+    margin-left: 0;
+    width: 41.666666%;
+}
+.no-gutter .row-fluid .span6,
+.no-gutter.row-fluid .span6 {
+    margin-left: 0;
+    width: 50%;
+}
+.no-gutter .row-fluid .span7,
+.no-gutter.row-fluid .span7 {
+    margin-left: 0;
+    width: 58.333333%;
+}
+.no-gutter .row-fluid .span8,
+.no-gutter.row-fluid .span8 {
+    margin-left: 0;
+    width: 66.666666%;
+}
+.no-gutter .row-fluid .span9,
+.no-gutter.row-fluid .span9 {
+    margin-left: 0;
+    width: 75%;
+}
+.no-gutter .row-fluid .span10,
+.no-gutter.row-fluid .span10 {
+    margin-left: 0;
+    width: 83.333333%;
+}
+.no-gutter .row-fluid .span12,
+.no-gutter.row-fluid .span12 {
+    margin-left: 0;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+    .no-gutter .row-fluid [class*="span"],
+    .no-gutter.row-fluid [class*="span"] {
+        width: 100%;
+    }
+}

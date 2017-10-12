@@ -1,0 +1,135 @@
+// ---
+// Typography
+// ---
+html {
+    font-size: 14px;
+    @include bp(sm) {
+        font-size: 16px;
+    }
+    @include bp(xl) {
+        font-size: 18px;
+    }
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+    font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// set the vertical rhythm
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup,
+ul,
+ol,
+dd,
+p,
+figure,
+pre,
+table,
+fieldset,
+hr {
+	margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+// Body Text
+a {
+    color: $blue;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        color: lighten($blue, 10%);
+    }
+    &:active {
+        color: lighten($blue, 8%);
+    }
+}
+strong {
+    font-weight: 600;
+}
+p {
+    font-size: 1rem; // 16px
+}
+small {
+    font-size: .75rem; // 12px
+}
+
+// Header Text
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Montserrat", sans-serif;
+    line-height: 1.2;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3rem; // 48px
+}
+
+h2 {
+    font-size: 2.25rem; // 36px
+    color: $blue;
+}
+
+h3 {
+    font-size: 1.75rem; // 28px
+}
+
+h4 {
+    font-size: 1.25rem; // 24px
+}
+
+h5 {
+    font-size: 1.15rem; // 20px
+}
+
+h6 {
+    font-size: 1rem; // 18px
+}
+
+
+pre { 
+    margin: 0.5em 0 1em;
+}
+
+code {
+    background: #263238;
+    display: block;
+    padding: 2em;
+    color: #dcf3ff;
+    border-radius: 3px;
+    overflow: auto;
+}
+
+hr {
+    color: $grey;
+    background-color: $grey;
+    height: 1px;
+    border: none;
+    clear: both;
+}
+
+blockquote {
+    background: whitesmoke;
+    margin: 0;
+    padding: 0.25rem 1.5rem;
+    border-left: .5rem solid #d2d2d2;
+    font-size: 1.25rem;
+}
+blockquote p {
+    font-size: 1.25rem;
+    opacity: .75;
+    font-style: italic;
+}

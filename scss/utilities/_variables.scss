@@ -1,0 +1,34 @@
+// Colors
+
+$orange: #f37021;
+$yellow: #ffcb05;
+$green: #72bf44;
+$blue: #162b75;
+$light-blue: #00aeef;
+$purple: #a23f97;
+$grey: #c7c8ca;
+$dark-grey: #636466;
+$white: #fcfcfc;
+$black: #111111;
+
+$blue-gradient: linear-gradient(45deg, $light-blue 0%, $blue 100%);
+$purple-gradient: linear-gradient(45deg, $purple 0%, $blue 100%);
+$orange-gradient: linear-gradient(45deg, $yellow 0%, $orange 100%);
+$grey-gradient: linear-gradient(45deg, $grey 0%, $dark-grey 100%);
+$green-gradient: linear-gradient(45deg, #a6ce39 0%, #00ae4d 100%);
+
+$blue-gradient-reverse: linear-gradient(135deg, $light-blue 0%, $blue 100%);
+$purple-gradient-reverse: linear-gradient(135deg, $purple 0%, $blue 100%);
+$orange-gradient-reverse: linear-gradient(135deg, $yellow 0%, $orange 100%);
+$grey-gradient-reverse: linear-gradient(135deg, $grey 0%, $dark-grey 100%);
+$green-gradient-reverse: linear-gradient(135deg, #a6ce39 0%, #00ae4d 100%);
+
+// Shadows
+$subtle-shadow: 2px 2px 7px rgba(0, 0, 0, 0.07);
+
+// Screen sizes
+$screen-xs: 25em; // ~400px
+$screen-sm: 48em; // ~768px
+$screen-md: 64em; // ~1024px
+$screen-lg: 75em; // ~1200px
+$screen-xl: 87.5em; // ~1400px

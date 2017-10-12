@@ -1,0 +1,94 @@
+/* ROI Calculator Page */
+.hs-content-id-4266462707 {
+    background: #f1f1f1;
+}
+.hs-content-id-4266462707 .curve path {
+    fill: #f1f1f1;
+}
+.roi-calculator-wrapper {
+    opacity: 1;
+    background: #fff;
+    padding: 2em;
+    max-width: 700px;
+    margin: -4em auto 1em !important;
+    float: none !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    position: relative;
+}
+.calculating .roi-calculator-wrapper {
+    display: none;
+}
+
+.roi-calculator-wrapper h3 {
+    margin-top: 0;
+}
+
+.roi-calculator-wrapper input[type="submit"] {
+    display: block;
+    width: 100%;
+}
+
+canvas#myChart {
+    height: 0;
+    width: 0;
+    transition: all 1s ease 0.75s;
+    margin: auto;
+    display: block;
+}
+
+.pre-calculated-content {
+    max-width: 640px;
+    float: none !important;
+    margin: auto !important;
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+.calculating .pre-calculated-content {
+    opacity: 0;
+    max-height: 0;
+}
+.calculated .pre-calculated-content {
+    display: none;
+}
+.calculated-content {
+    max-width: 700px;
+    float: none !important;
+    margin: auto !important;
+    display: none !important;
+}
+.calculating .calculated-content {
+    display: block !important;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease 1s;
+}
+.calculated .calculated-content {
+    visibility: visible;
+    opacity: 1;
+}
+
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.75);
+    opacity: 0;
+    visibility: hidden;
+    color: white;
+    transition: all 400ms ease;
+}
+.calculating .loading {
+    opacity: 1;
+    visibility: visible;
+}
+.calculated .loading {
+    opacity: 0;
+    visibility: hidden;
+}
+

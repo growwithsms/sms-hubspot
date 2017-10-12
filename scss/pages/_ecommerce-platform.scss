@@ -1,0 +1,28 @@
+/* Web Service Pages */
+.light-blue-section {
+    background: $light-blue;
+    padding: 1.5em;
+    margin: 1em 0;
+    h2,
+    h3,
+    h4,
+    p {
+        color: white;
+        margin: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .letsgrow-image {
+        display: none !important;
+    }
+}
+
+.carousel-content > span {
+    width: 100%;
+    display: block;
+}
+.carousel-content .hs_cos_wrapper_type_rich_text {
+    width: 267px;
+    margin: 0 1em;
+}

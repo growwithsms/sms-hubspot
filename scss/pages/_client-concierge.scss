@@ -1,0 +1,32 @@
+/* Client Concierge Page */
+.client-concierge .rounded.widget-type-linked_image img {
+    border-radius: 50%;
+}
+@media (min-width: 768px) {
+    .client-concierge figure.hover-block-module.effect-sadie {
+        max-height: 180px;
+    }
+}
+.client-concierge .green-section {
+    background: $purple-gradient;
+    color: #fff;
+    padding: 2em 0 3em;
+    text-align: center;
+    h2,
+    a {
+        color: #fff;
+    }
+    .widget-type-raw_html {
+        margin-bottom: 1em;
+        p {
+            font-size: 1.25rem;
+        }
+    }
+    .widget-type-rich_text {
+        margin-bottom: 2em;
+    }
+}
+.client-concierge li.hs-form-checkbox {
+    display: inline-block;
+    padding-right: 1em;
+}

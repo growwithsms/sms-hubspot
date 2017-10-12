@@ -1,0 +1,81 @@
+/* --------------------- Login Page ------------------- */
+.login-v2 .curve {
+    display: none;
+}
+.login-v2 form {
+    margin: -3em auto 0;
+    background: white;
+    position: relative;
+    max-width: 350px;
+}
+.login-v2 .alert.warning {
+    margin-top: -2em;
+    position: relative;
+    margin-bottom: 4em;
+}
+@media (min-width: 768px) {
+    .login-v2 .footer-cta {
+        margin-top: 0;
+        position: relative;
+        padding-left: 2rem;
+    }
+    .login-v2 .main-content {
+        padding-left: 2em;
+    }
+    .login-v2 .footer-cta img {
+        margin-top: -6em;   
+    }
+}
+@keyframes space {
+    from{ background-position: 0px 0px; }
+    to{ background-position: 798px 798px; }
+}
+.footer-cta {
+    background: $dark-grey url(http://offer.growwithsms.com/hubfs/Website_Images/stardust-lighter.png) repeat fixed;
+    color: #fff;
+    padding: 1em 0 4em;
+    margin-top: 11em;
+    animation-name: space;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.footer-cta h2,
+.footer-cta h3 {
+    color: #fff;
+}
+.footer-cta .page-wrap {
+    max-width: 666px;
+}
+
+.footer-cta img {
+    margin-top: -10em;
+}
+.footer-cta .button {
+    display: block;
+    font-size: 1em;
+    text-align: center;
+}
+/*.countdown {
+    text-align: center;
+    margin-top: 1em;
+    font-size: 1.3em;
+    background: rgba(255, 255, 255, 0.34);
+    border-radius: 3px;
+    color: #fff;
+    padding: 0.75em 1em 1em 1em;
+}
+
+#clock .unit {
+    font-size: 2em;
+}
+
+#clock .unite-name {
+    opacity: 0.8;
+    font-style: italic;
+    margin: 0 0.2em 0 0;
+}*/
+.equal-heights > .row-fluid-wrapper > .row-fluid {
+    display: flex;
+    flex-wrap: wrap;
+}

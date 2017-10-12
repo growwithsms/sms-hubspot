@@ -1,0 +1,140 @@
+/* About Page */
+.team-members-wrapper {
+    background: $blue-gradient;
+    padding-bottom: 2em;
+    color: $white;
+    h2 {
+        color: $white;
+    }
+    .widget-type-rich_text {
+        max-width: 790px;
+        padding: 1em 1em 2em;
+        text-align: center;
+        margin: auto !important;
+        float: none !important;
+    }
+}
+
+.team-members > span {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    > .hs_cos_wrapper_widget {
+        width: 100%;
+        @include bp(sm) {
+            width: calc(50% - 1rem);
+        }
+        @include bp(md) {
+            width: calc(33.333% - 1rem);
+        }
+        @include bp(lg) {
+            width: calc(25% - 1rem);
+        }
+    }
+}
+
+.team-member-module {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    video {
+        border-radius: 50%;
+        margin: auto;
+    }
+    p {
+        margin-top: 0.25em;
+        margin-bottom: 0;
+        line-height: 1;
+        opacity: 0.9;
+        filter: alpha(opacity=90);
+        font-size: 0.8em;
+    }
+    .team-member-info {
+        background: #fff;
+        padding: 0.25em .25em 0.5em .25em;
+        font-size: 1.25em;
+        margin-top: -2.5em;
+        position: relative;
+        color: #212121;
+    }
+    .team-member-name {
+        margin-top: 0.5em;
+    }
+
+}
+
+.team-photo-wrapper {
+    margin-top: 2rem;
+    .widget-span .row-fluid {
+        @include bp(sm) {
+            display: flex;
+        }
+    }
+    .span6 {
+        background: #fafafa;
+    }
+    img {
+        object-fit: cover;
+        width: 100% !important;
+        height: 100% !important;
+        max-width: none !important;
+    }
+    .hs_cos_wrapper_type_rich_text {
+        display: block;
+        padding: .5em 2em 2em;
+        max-width: 700px;
+    }
+}
+
+.our-value svg {
+    display: block;
+    margin-top: 1em;
+}
+
+.konami #hs_cos_wrapper_widget_1471896125783 {
+    animation-name: hinge;
+    animation-delay: 3s;
+    animation-duration: 2s;
+    animation-fill-mode: both;
+}
+
+.blur-animation {
+    animation: blur 3s 2.5s;
+}
+
+@keyframes blur {
+    0%,
+    100% {
+        filter: blur(0px);
+    }
+    50% {
+        filter: blur(10px);
+    }
+}
+
+@keyframes hinge {
+    0% {
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+    }
+
+    20%,
+    60% {
+        transform: rotate3d(0, 0, 1, 80deg);
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+    }
+
+    40%,
+    80% {
+        transform: rotate3d(0, 0, 1, 60deg);
+        transform-origin: top left;
+        animation-timing-function: ease-in-out;
+        opacity: 1;
+    }
+
+    to {
+        transform: translate3d(0, 700px, 0);
+        opacity: 0;
+    }
+}

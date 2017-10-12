@@ -1,0 +1,297 @@
+/* ==========================================================================
+   Blog                                         
+   ========================================================================== */
+
+@media (min-width: 768px) {
+    .hs-blog-post .main-content {
+        margin-top: -3em;
+        position: relative;
+        padding: 2rem !important;
+    }
+}
+
+.hs-blog-post .custom_top-pane {
+    min-height: 30rem;
+}
+
+.hs-blog-listing .custom_top-pane-text {
+    font-size: 0.8em;
+}
+
+.hubspot-author {
+    margin-top: -1rem;
+    display: block;
+    margin-bottom: 1rem;
+    color: $grey;
+    a {
+        color: $grey;
+        text-decoration: underline;
+    }
+}
+
+.post-listing {
+    article.post-item {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+    }
+    p {
+        margin-top: 0;
+    }
+}
+
+
+
+/* Blog Content Column
+   ========================================================================== */
+
+.blog-audio audio {
+    margin: -1em 0px 1em;
+    display: block;
+    width: 100%;
+}
+
+
+/* Blog Author and Avatar */
+
+.about-author-sec {
+    background: #f1f1f1;
+    padding: 0.5em 1.5em 1em 1.5em;
+    border-left: 1em solid #ddd;
+    position: relative;
+    img {
+        border-radius: 50%;
+        margin-top: -3em;
+    }
+}
+
+
+/** 
+ * Blog Social Sharing icons
+ */
+
+.hs-blog-social-share {
+    height: auto;
+    padding-bottom: 0.5em;
+    padding-top: 1em;
+}
+
+.hs-blog-social-share .hs-blog-social-share-list .hs-blog-social-share-item {
+    display: inline-block;
+    float: none;
+    vertical-align: middle;
+}
+
+
+/** 
+ * Blog Commments 
+ *
+ * Custom styles are listed below, as the COS does not provide default styles.
+ */
+
+#comments-listing {
+    margin-bottom: 30px;
+}
+
+.comment {
+    background: #fafafa;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    padding: 1em 1em 1em 2em;
+}
+
+.comment-date {
+    font-size: 13px;
+    text-align: right;
+}
+
+.comment-from {
+    font-weight: bold;
+}
+
+.comment-body {
+    padding: 10px 0;
+}
+
+.comment.depth-1 {
+    margin-left: 2em;
+    padding: 1em 1em 1em 2em;
+}
+
+.comment.depth-2 {
+    margin-left: 4em;
+    padding: 1em 1em 1em 2em;
+}
+
+
+/* Pagination */
+
+.blog-pagination {
+    display: flex;
+    justify-content: space-between;
+    a {
+        padding: 0.5em 1em;
+        display: block;
+        background: #f1f1f1;
+        color: #666;
+    }
+}
+
+
+/** 
+ * Blog All Posts Page
+ *
+ * ALWAYS be sure to set styles to these selectors, as the COS does not provide default styles
+ */
+
+h2.post-listing-simple {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.5em;
+    font-size: 1.3em;
+    margin-bottom: 0.75em;
+    margin-top: 0.75em;
+}
+
+.post-listing-simple {
+    margin-top: 2em;
+}
+
+
+
+/* Blog Sidebar
+   ========================================================================== */
+
+.blog .blog-sidebar {
+    margin-top: 2em;
+}
+
+@media (min-width: 768px) {
+    .hs-blog-post .blog-sidebar {
+        margin-top: -2em;
+    }
+}
+
+
+/* Blog Modules */
+
+.hs-input.invalid.error {
+    margin-bottom: 0;
+}
+
+.subscription-template .checkbox-row span.fakelabel span {
+    margin-top: -4px;
+}
+
+.author-portrait {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.hs-author-profile {
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #666;
+}
+
+.hs-author-profile .hs-author-bio {
+    padding-top: 15px;
+}
+
+.hs-author-profile .hs-author-social-section {
+    margin: 15px 0 0;
+}
+
+#comment-form .hs-button {
+    margin-top: 15px;
+}
+
+.post-header h2,
+.post-header h1,
+.blog-sidebar h2,
+h2.hs-author-name {
+    color: #333;
+    font-size: 30px;
+}
+
+.post-header h2 a,
+.post-listing-simple h2 a {
+    color: #333;
+}
+
+#hubspot-author_data,
+#hubspot-topic_data,
+.hs-author-social-section {
+    margin: 10px 0;
+}
+
+a.more-link {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.filter-expand-link {
+    display: inline-block;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+    color: $white;
+    text-decoration: none;
+    text-align: center;
+    border: 3px solid $grey;
+    transition: all 200ms ease;
+    letter-spacing: 1px;
+    margin-right: .5rem;
+    margin-bottom: .5rem;
+    background: $grey-gradient;
+    &:hover,
+    &:focus {
+        color: $white;
+        background: $grey-gradient-reverse;
+        &:active {
+            border-color: lighten($grey, 5%);
+        }
+    }
+}
+
+.blog-sidebar .row-fluid>div {
+    margin-bottom: 30px;
+}
+
+.hs_cos_wrapper_type_post_filter ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        display: inline-block;
+    }
+    a {
+        color: #555;
+        font-size: 0.8em;
+        border: 1px solid #bbb;
+        display: inline-block;
+        padding: 0.25em 0.5em;
+        margin: 0 5px 7px 0;
+    }
+}
+
+.custom_listing_comments {
+    font-size: 0.9em;
+    background: #f1f1f1;
+    padding: 0.5em 1em;
+    color: #666;
+    margin-top: 1em;
+}
+
+.hs-author-avatar:after {
+    content: "";
+    display: block;
+    clear: both;
+    width: 100%;
+}
+
+p#hubspot-topic_data {
+    font-size: .875rem;
+}

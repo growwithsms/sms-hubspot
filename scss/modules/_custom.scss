@@ -1,0 +1,916 @@
+/* Latest Resources Module */
+
+.latest-resources-module {
+    background: $purple-gradient;
+    position: relative;
+    >.row-fluid {
+        @include bp(sm) {
+            display: flex;
+        }
+    }
+    .curve {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.resource-tabs {
+    background: lighten($grey, 10%);
+    a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: "Montserrat", sans-serif;
+        padding: 1rem;
+        &.resource-tab:after {
+            content: "▶";
+        }
+        &.resource-tab:hover,
+        &.resource-tab:focus,
+        &.resource-tab.active {
+            background: $blue;
+            color: $white;
+        }
+        &.resource-tab {
+            background: $grey;
+        }
+        span {
+            padding: 0 1rem;
+        }
+    }
+}
+
+.resource-panel {
+    padding: 2rem 1rem;
+    color: $white;
+    .button {
+        position: relative;
+        z-index: 1;
+    }
+    &-right {
+        position: relative;
+        img {
+            margin-bottom: -5rem;
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+
+
+/* Testimonials Module */
+
+.testimonials-module {
+    background: $green url('https://offer.growwithsms.com/hubfs/SMS2017/img/green-bg.jpg
+ ') no-repeat center center/cover;
+ position: relative;
+    .curve {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.testimonial {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    figure {
+        order: 3;
+        @include bp(md) {
+            order: 1;
+            flex: 1;
+        }
+        position: relative;
+        margin: 1rem 0 0 0;
+        text-align: center;
+        figcaption {
+            background: $white;
+            padding: .5rem .75rem;
+            position: absolute;
+            right: 0;
+            @include bp(sm) {
+                right: -10%;
+            }
+            bottom: 3rem;
+            text-align: left;
+            span {
+                display: block;
+                &.testimonial-name {
+                    font-weight: bold;
+                }
+                &.testimonial-title {
+                    font-style: italic;
+                }
+            }
+        }
+    }
+    blockquote {
+        order: 2;
+        @include bp(md) {
+            flex: 2;
+        }
+        background: 0;
+        border: 0 none;
+        padding: 0;
+        font-size: 1.5rem;
+        color: $white;
+        margin: 2rem 4rem 1rem 4rem;
+        @include bp(md) {
+            margin: 2rem 4rem 8rem;
+        }
+        span {
+            position: relative;
+            display: inline-block;
+        }
+    }
+    .quote-left,
+    .quote-right {
+        position: absolute;
+        fill: white;
+    }
+    .quote-right {
+        bottom: -.75rem;
+        right: -4rem;
+    }
+    .quote-left {
+        top: -.5rem;
+        left: -4rem;
+    }
+}
+
+
+
+
+
+/* Capabilities - Services Module */
+
+.capabilities-module {
+    height: 350px;
+    .capability {
+        display: flex;
+        align-items: flex-start;
+        text-decoration: none;
+        height: 14.28571%;
+        transition: all 200ms ease 200ms;
+        position: relative;
+    }
+    .capability-icon {
+        width: 2rem;
+        height: 2rem;
+        font-size: .5rem;
+        text-align: center;
+        line-height: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+        fill: $light-blue;
+        transition: all 250ms ease;
+    }
+    .capability-text {
+        flex: 1;
+        border-bottom: 1px solid $grey;
+        h3 {
+            margin: .4rem 0;
+            font-size: 1rem;
+            color: $black;
+        }
+    }
+    .capability-description {
+        position: absolute;
+        width: calc(100% - 3rem);
+        margin-top: .25rem;
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(0, 20px);
+        transition: all 250ms ease 150ms;
+        color: $black;
+        p {
+            margin-top: 0;
+        }
+    }
+    &:hover {
+        .capability {
+            height: 10.8333%;
+            transition: all 250ms ease 150ms;
+            &:hover {
+                height: 35%;
+                transition: all 250ms ease 150ms;
+                .capability-icon {
+                    fill: $orange;
+                }
+                h3 {
+                    transition: all 250ms ease;
+                    color: $orange;
+                }
+                .capability-description {
+                    transform: translate(0, 0);
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+}
+
+
+
+/* Website Design Module */
+
+.website-design-module {
+    margin-bottom: 2em;
+    clear: both;
+}
+
+.browser {
+    display: none;
+}
+
+.browser.active {
+    display: block;
+}
+
+.mobile.browser {
+    max-width: 350px;
+    margin: auto;
+}
+
+.website-design-module button {
+    display: block;
+    width: 100%;
+    background: #616161;
+    padding: 0.7em;
+    border-radius: 3px;
+    margin-bottom: 0.5em;
+    border: 0 none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.website-design-module button.active {
+    cursor: default;
+    opacity: 0.75;
+}
+
+.browser-header {
+    position: relative;
+    height: 22px;
+    background: #eee;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+    padding: 1px 10px;
+}
+
+.browser-header span {
+    height: 10px;
+    width: 10px;
+    background: #999;
+    border-radius: 10px;
+    display: inline-block;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.browser-header #close:hover {
+    background: #f02121;
+    box-shadow: 0 0 5px #f02121;
+}
+
+.browser-header #minimize:hover {
+    background: $yellow;
+    box-shadow: 0 0 5px $yellow;
+}
+
+.browser-header #expand:hover {
+    background: $green;
+    box-shadow: 0 0 5px $green;
+}
+
+.browser-container {
+    max-height: 590px;
+    overflow-y: scroll;
+    border-left: 2px solid #eee;
+    border-right: 2px solid #eee;
+    border-bottom: 4px solid #eee;
+    transition: all 200ms ease;
+    transform: scale(1);
+    transform-origin: top left;
+}
+
+.minimize .browser-container {
+    max-height: 0px;
+}
+
+.browser.minimize {
+    position: fixed;
+    bottom: 0;
+    left: 10px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.71);
+    z-index: 2;
+    width: 200px;
+}
+
+.close .browser-container {
+    transform: scale(0);
+}
+
+.browser.expand {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    z-index: 99999;
+    overflow: scroll;
+}
+
+.browser img {
+    transition: all 200ms ease;
+}
+
+.browser.expand img {
+    max-width: none;
+    width: 100%;
+}
+
+.expand .browser-container {
+    max-height: none;
+    overflow: auto;
+    margin-top: 20px;
+}
+
+.expand .browser-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 2px solid #ddd;
+    z-index: 9999;
+}
+
+
+
+
+/* Pricing Module */
+
+.pricing-module-wrapper {
+    background: #fff;
+    position: relative;
+    padding-bottom: 3em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.price-figure {
+    height: 3em;
+    padding: 0.7em;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 1.5em;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.price-figure.not-empty {
+    background: $light-blue;
+}
+
+.tier-name {
+    font-size: 0.8rem;
+    display: block;
+}
+
+.pricing-module-wrapper:nth-child(2) .price-figure {
+    background: $light-blue;
+}
+
+.pricing-module-wrapper:nth-child(3) .price-figure {
+    background: $orange;
+}
+
+.pricing-module-wrapper:nth-child(4) .price-figure {
+    background: $purple;
+}
+
+.pricing-table {
+    position: relative;
+    margin-bottom: 4em;
+}
+
+.pricing-table .content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing-table .content li {
+    display: block;
+    text-align: center;
+    padding: 0.35em 0.8em;
+    color: $green;
+    font-weight: bold;
+    border-bottom: 1px solid #eee;
+}
+
+.pricing-module-wrapper:first-child .pricing-table .content li {
+    color: #222;
+    font-weight: normal;
+    text-align: left;
+    background: #eee;
+}
+
+.pricing-table .button.green {
+    display: block;
+    border-radius: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+
+.pricing-module-wrapper.popular {
+    transform: scale(1.02);
+    z-index: 1;
+}
+
+.pricing-module-wrapper.popular .pricing-table {
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.17);
+}
+
+.popular .button.green {
+    padding: 0.7em 1em 1em 1em;
+}
+
+.equal-height>div>div {
+    display: flex;
+}
+
+@media(max-width:767px) {
+    .price-figure {
+        font-size: 1em;
+        height: 4em;
+        padding: 0.5em;
+    }
+    .pricing-table .button {
+        padding: 5px !important;
+    }
+}
+
+.columns.three {
+    column-count: 3;
+    list-style: none;
+    column-rule: 1px solid #ddd;
+    column-gap: 4em;
+    padding: 2em 2em 1em;
+}
+
+@media (max-width: 767px) {
+    .columns.three {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .columns.three {
+        column-count: 1;
+    }
+}
+
+.well {
+    padding: 1em;
+    color: #666;
+}
+
+.center {
+    text-align: center;
+}
+
+.grey {
+    color: #666;
+    background: #eee;
+}
+
+.jumbo {
+    text-transform: uppercase;
+}
+
+
+
+
+/* Hover Block Module */
+
+figure.hover-block-module {
+    position: relative;
+    overflow: hidden;
+    margin: 0 0 1em 0;
+    text-align: center;
+    cursor: pointer;
+}
+
+@media (min-width: 768px) {
+    figure.hover-block-module {
+        max-height: 380px;
+    }
+}
+
+figure.hover-block-module.blue {
+    background-color: $blue;
+}
+
+figure.hover-block-module.orange {
+    background-color: $orange;
+}
+
+figure.hover-block-module.yellow {
+    background-color: $yellow;
+}
+
+figure.hover-block-module.purple {
+    background-color: $purple;
+}
+
+figure.hover-block-module img {
+    position: relative;
+    display: block;
+    opacity: 0.95;
+    transition: transform 0.35s;
+    transform: scale(1.12);
+    margin: auto !important;
+}
+
+figure.hover-block-module h2 {
+    word-spacing: -0.15em;
+    margin: 0;
+    position: absolute;
+    bottom: 0.5em;
+    left: 0;
+    width: 100%;
+    padding: 0 1em;
+    color: #fff;
+    transition: transform 0.35s, color 0.35s;
+}
+
+figure.hover-block-module h2:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: #fff;
+    width: 0%;
+    margin: auto;
+    position: absolute;
+    left: 25%;
+    bottom: -1em;
+    transition: all 550ms ease;
+}
+
+figure.hover-block-module figcaption {
+    padding: 2em;
+    color: #fff;
+    backface-visibility: hidden;
+}
+
+figure.hover-block-module figcaption,
+figure.hover-block-module figcaption>a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+figure.hover-block-module figcaption>a {
+    z-index: 10;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+}
+
+figure.hover-block-module figcaption::before,
+figure.hover-block-module figcaption::after {
+    pointer-events: none;
+}
+
+figure.hover-block-module figcaption:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: 0.75;
+    transform: translate3d(0, 50%, 0);
+    transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.hover-block-module figcaption:before {
+    background: linear-gradient(to bottom, rgba(33, 33, 33, 0) 0%, rgba(33, 33, 33, 0.8) 75%);
+}
+
+figure.hover-block-module:hover img {
+    transform: scale(1);
+}
+
+figure.hover-block-module:hover h2 {
+    color: #fff;
+    transform: translate3d(0, -40px, 0);
+}
+
+figure.hover-block-module:hover h2:after {
+    width: 50%;
+}
+
+figure.hover-block-module:hover figcaption:before {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+
+
+/* Additional Menus aside from the Main Nav */
+
+.body-container .hs-menu-flow-vertical.hs-menu-wrapper>ul li a {
+    line-height: 21px;
+    color: $dark-grey;
+    padding: 10px;
+    text-decoration: none;
+    white-space: normal !important;
+}
+
+.body-container .hs-menu-flow-vertical.hs-menu-wrapper>ul li a:hover {
+    text-decoration: none;
+    background-color: #EEE;
+}
+
+.body-container .hs-menu-flow-vertical.hs-menu-wrapper.flyouts>ul ul {
+    width: auto;
+    background-color: #fff;
+}
+
+.body-container .hs-menu-flow-vertical.hs-menu-wrapper.flyouts>ul ul>li>a {
+    min-width: 150px;
+    white-space: normal !important;
+}
+
+.body-container .hs-menu-flow-vertical.hs-menu-wrapper.no-flyouts>ul ul>li>a {
+    padding-left: 25px;
+    white-space: normal !important;
+}
+
+
+
+/* Light Galery Module */
+
+.light-gallery-module a:not(:first-child) {
+    display: none;
+}
+
+html:not(.hs-inline-edit) .light-gallery-module {
+    width: 30%;
+    float: left;
+    margin-right: 3.33%;
+    text-align: center;
+    font-size: 0.8em;
+}
+
+.light-gallery-module a {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    html:not(.hs-inline-edit) .light-gallery-module {
+        width: 46.66%;
+    }
+}
+
+@media (max-width: 400px) {
+    html:not(.hs-inline-edit) .light-gallery-module {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+}
+
+
+
+
+/* Resources */
+.resource-module {
+    float: left;
+    width: 33.333%;
+    background-size: 55%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    padding: 1em;
+    position: relative;
+    border: 1px solid white;
+    min-height: 300px;
+    text-align: center;
+    transition: background-position 200ms ease;
+}
+
+@media (max-width: 1025px) {
+    .resource-module {
+        width: 50%;
+    }
+}
+
+@media (max-width: 767px) {
+    .resource-module {
+        width: 100%;
+    }
+}
+
+.resource-module:hover {
+    background-position: 50% 48%;
+}
+
+.resource-module a,
+.resource-module .wistia_embed {
+    display: block !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.resource-module .wistia_click_to_play {
+    display: block !important;
+}
+
+.resource-module h2 {
+    position: absolute;
+    top: 50%;
+    left: 1em;
+    right: 1em;
+    color: white;
+    font-size: 1.5rem;
+    -webkit-transform: translate(0%, -50%);
+    transform: translate(0%, -50%);
+}
+.resource-module:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: $black;
+    opacity: .75;
+    transition: all 200ms ease;
+}
+
+/* Animations */
+
+.animated {
+    animation-duration: 1.5s;
+    animation-fill-mode: both;
+}
+
+.animated.infinite {
+    animation-iteration-count: infinite;
+}
+
+.delay {
+    animation-delay: 1.5s;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0, -50%, 0);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+    animation-timing-function: cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+@keyframes bounce {
+    from,
+    20%,
+    53%,
+    80%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+        transform: translate3d(0, 0, 0);
+    }
+
+    40%,
+    43% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -30px, 0);
+    }
+
+    70% {
+        animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+        transform: translate3d(0, -15px, 0);
+    }
+
+    90% {
+        transform: translate3d(0, -4px, 0);
+    }
+}
+
+.bounce {
+    animation-name: bounce;
+    transform-origin: center bottom;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-delay: 0.5s;
+}
+
+
+/* Case Studies */
+
+.cs-about-company {
+    box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+    padding: 2em;
+    margin-top: 3rem;
+}
+
+.cs-overview-module {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0 3rem;
+}
+
+@media (min-width: 768px) {
+    .cs-testimonial img {
+        border-radius: 50%;
+        position: absolute;
+        left: -40px;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    .cs-testimonial blockquote {
+        position: relative;
+        padding-left: 80px;
+    }
+}
+
+p.stat-number {
+    font-size: calc(1em - -7vw);
+    margin: 0;
+    text-align: center;
+    line-height: 1.1;
+}
+
+p.stat-description {
+    font-size: 2em;
+    text-align: center;
+    opacity: 0.5;
+    margin-top: 0;
+    line-height: 1;
+}
+
+/* SMS Industrial Marketing 101: Class Overview module */
+.class-overview-module {
+    max-width: 860px;
+    margin: auto;
+    margin-bottom: 1rem;
+    .equal-height {
+        @include bp(sm) {
+            display: flex;
+        }
+    }
+    h4 {
+        margin-bottom: .5rem;
+        margin-left: 1rem;
+    }
+}
+.class-overview-description {
+    background: #333 url('https://offer.growwithsms.com/hubfs/Campaigns/Industrial_Marketing_101/Header_Images/Dark_Background-small.png') no-repeat center center/cover;
+    color: white;
+    padding: 1rem 2rem;
+    a {
+        text-decoration: underline;
+        color: white;
+        &:focus,
+        &:hover {
+            opacity: .8;
+            color: white;
+        }
+    }
+}
